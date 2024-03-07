@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>OpenXmlSdk</id>
+    <version>2.0.0</version>
+    <title>Open XML SDK</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://github.com/ericschultz/openxmlsdk_nuget/raw/d3d3f8ec78701c9cefc5d5124b46444f92e6a3a9/ORIGINALLICENSE.rtf</licenseUrl>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/bb448854(v=office.14)</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>An unofficial package of Microsoft's OpenXML SDK. If anyone has a concern about this, please contact me!
+
+Description from Microsoft:
+The Open XML SDK 2.0 simplifies the task of manipulating Open XML packages and the underlying Open XML schema elements within a package. The Open XML SDK 2.0 encapsulates many common tasks that developers perform on Open XML packages, so that you can perform complex operations with just a few lines of code.</description>
+    <summary>An unofficial package of Microsoft's Open XML SDK (files for Office 2007 and up)</summary>
+  </metadata>
+</package>

@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IntegracaoNexxtera
+</name>
+</assembly>
+<members>
+<member name="T:IntegracaoNexxtera.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:IntegracaoNexxtera.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:IntegracaoNexxtera.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:IntegracaoNexxtera.BuscaBancoDebitoAutomatico.BuscaBancoDebitoAutomatico">
+ <summary>
+ Retorna uma lista com a relacao dos Banco para Debito Automatico.
+ </summary>
+ <returns>Uma lista com a relacao dos Banco para Debito Automatico.</returns>
+ <remarks>
+ 
+ Data Criação:     27/05/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.BuscaBancoDebitoAutomatico.BuscaBancoDebitoAutomatico(System.String)">
+ <summary>
+ Retorna uma lista com a relação dos Banco para Debito Automatico filtrando pelo status.
+ </summary>
+ <param name="strStatus">informar o status desejado - campo obrigatório (A-I)</param>
+ <returns>Uma lista com a relacao dos Banco para Debito Automatico.</returns>
+ <remarks>
+ 
+ Data Criação:     15/06/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.BuscaBancoDebitoAutomatico.PesquisaBancoParametro(System.String)">
+ <summary>
+ Busca o banco para debito Automatico 
+ </summary>
+ <param name="Banco">Variavel com o codigo do banco</param>
+ <returns>Um string contendo codigo do banco | agencia | conta | nome do banco</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.ConsultaContasReceber.BuscaNumTitSeqTitDtEmissaoContasAReceberPorSituacaoQ">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks>
+ 
+ SELECT 
+    Contas_a_Receber.NumTit,
+    Contas_a_Receber.SeqTit, 
+    Contas_a_Receber.DtEmissao,
+    Cliente.CodClie
+ FROM Contas_a_Receber
+	    left join Cliente on Contas_a_Receber.CodClie=Cliente.CodClie
+ WHERE Contas_a_Receber.Situacao != 'Q'
+ ORDER BY Contas_a_Receber.CodClie
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.ContasAReceberAlterar.AlterarContasReceberDI(IntegracaoNexxtera.ContaReceber,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ Alterar a observação e a situação do título por codclie, Numtit, Seqtit, dtEmissao e IdFilial.
+ </summary>
+ <param name="_ContaReceber">Passsa a Entidade preenchida.</param>
+ <param name="connection">Passa a conexao aberta.</param>
+ <param name="Transacao">Passa a transacao</param>
+ <returns>
+ 
+ CREATE PROCEDURE [dbo].[P_AlterarContasReceberDI]
+
+	@ObsTit varchar(500),
+	@Situacao varchar(5),
+	@codclie varchar(16),
+	@Numtit varchar(15),  
+	@Seqtit  varchar(20),
+	@dtEmissao DateTime,
+	@IdFilial varchar(3)
+AS
+	UPDATE Contas_a_Receber SET ObsTit = @ObsTit, Situacao = @Situacao
+	WHERE codclie = @codclie AND 
+		  Numtit = @Numtit AND 
+		  Seqtit = @Seqtit AND 
+		  dtEmissao = @dtEmissao AND 
+		  IdFilial = @IdFilial
+ 
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.InserirHistoricoContato.InsereHistoricoContato(IntegracaoNexxtera.HistoricoContato)">
+ <summary>
+ Insere dados na tabela tHist_Contato
+ </summary>
+ <param name="_historicoContato"> parametro do tipo HistoricoContato</param>
+ <returns>retorna uma varia vel do tipo retorno que ira informa r se a operação foi executado com sucesso</returns>
+ <remarks>
+ Data Criação:    14/08/2011
+ Autor:           Edson Ferreira
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.CHelpDesk.AbrirOcorrencia(System.String,System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ ABRE A OCORRENCIA
+ </summary>
+ <param name="strUsr"></param>
+ <param name="strObs"></param>
+ <param name="connection"></param>
+ <param name="command"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.CHelpDesk.BuscarOcorrenciaAutomaticaRepetida(System.String,System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlTransaction,System.String@)">
+ <summary>
+ VERIFICA SE A OCORRENCIA JÁ EXISTE
+ </summary>
+ <param name="strUsr"></param>
+ <param name="strObs"></param>
+ <param name="connection"></param>
+ <param name="command"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.CHelpDesk.CopiaAnexoEmail(System.String,System.String,System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ COPIA O ANEXO QUE SERÁ ENVIADO COM O EMAIL PARA O SERVIDOR
+ </summary>
+ <param name="strCaminhoPrint"></param>
+ <param name="connection"></param>
+ <param name="command"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.CHelpDesk.PesquisaParametros(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ SELECT DA PARAMETROS E ATRIBUI A UM ARRAY DE STRINGS
+ </summary>
+ <param name="connection"></param>
+ <param name="command"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.CHelpDesk.InserirAnexo(System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ Insere os anexos na base
+ </summary>
+ <param name="connection"></param>
+ <param name="command"></param>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.DadosGenericos">
+ <summary>
+ Rotinas genéricas
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ EDF - TL200001 - Rotinas genéricas
+ Autor da Modificação: Edson Ferreira 
+ 
+ </remarks>
+</member>
+<member name="F:IntegracaoNexxtera.DadosGenericos.LOG__MANUTENCAO_CLIENTE_TELESYSTEM">
+ <summary>
+ Esta constante foi criada para que na busca de um log na 'tLogChangeData' para efeito
+ de histórico de alteração na tela do cliente. para inserção o frmClieEdi foi substituido pela
+ constante LOG__MANUTENCAO_CLIENTE_TELESYSTEM2 que contem o seguite texto 'ManutCliente'
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IntegracaoNexxtera.DadosGenericos.LOG__MANUTENCAO_CLIENTE_TELESYSTEM2">
+ <summary>
+ Esta constante está sendo gravada na 'tLogChangeData' no campo FORM  no lugar da 'frmClieEdi' 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IntegracaoNexxtera.DadosGenericos.LOG__ORDEM_INST_TELESYSTEM2">
+ <summary>
+ Esta constante está sendo gravada na 'tLogChangeData' no campo FORM  no lugar da 'frmOrdInst' 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IntegracaoNexxtera.DadosGenericos.LOG__VENDADEBITOAUTOMATICO_TELESYSTEM2">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IntegracaoNexxtera.DadosGenericos.LOG__REVERSAO_TELESYSTEM2">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.ErrorConstants">
+ <summary>
+ Classe número e descrição de erros
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Autor:           Edson Ferreira
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Funcoes">
+ <summary>
+ Classe de funções do projeto
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ EDF - TL200001 - Classe de funções do projeto
+ Autor da Modificação: Edson Ferreira   
+
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.verificaAcessoBD(System.String,System.Boolean@)">
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ <summary> Valida se a procedure está sendo executada no momento da validação. </summary>
+
+ <remarks> Lucas dos S. Pieretti da Silva, 11/11/2014. </remarks>
+
+ <param name="query">Nome da query a ser verificada no Banco de Dados</param>
+ <param name="ativa">Boolean para indicar se a query está ativa ou não</param>
+ 
+ <returns> 
+ Retorna true para query ativa no momento da verificação ou false para inativa ou erro de acesso ao bd
+ </returns>
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.IsErroEmail(System.Exception,System.String)">
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ <summary> Valida se a Exception foi acionada pelo servidor de e-mails. </summary>
+
+ <remarks> Renato G. Eraclide, 22/10/2014. </remarks>
+
+ <param name="ex">    Instância da Exception. </param>
+ <param name="email"> (Opcional) E-mail destinatário para exibir na mensagem. </param>
+ 
+ <returns> 
+ Retorna um objeto da classe Retorno que deve ser tratado como erro de e-mail caso retorne sucesso true. 
+ Conterá a mensagem de erro traduzida. 
+ </returns>
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.VerificaTecla(System.Int32)">
+ <summary>
+ Valida se o usuario digitou palavra com acentos e com "ç". 
+ </summary>
+ <param name="tecla">informar o codigo ascii da letra.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.RetiraAcento(System.String)">
+ <summary>
+ Remove acentos e "ç"
+ </summary>
+ <param name="strTexto">Informar o texto.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.DescMes(System.String)">
+ <summary>
+ Retorno o nome do mes referente o numero correspondente.
+ 01-Janeiro
+ 02-Fevereiro
+ 03-Março
+ 04-Abril
+ 05-Maio
+ 06-Junho
+ 07-Julho
+ 08-Agosto
+ 09-Setembro
+ 10-Outubro
+ 11-Novembro
+ 12-Dezembro
+ </summary>
+ <param name="mes">Informar o numero do mes.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.EnviarMensagemEmail(System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Boolean@,System.String[]@,System.String,System.String,System.Boolean)">
+ <summary>
+ Rotina para Envio de email.
+ </summary>
+ <param name="De">O email remetente do envio.</param>
+ <param name="Para">Endereço do email de envio.
+ No caso de envio para várias pessoas ao mesmo tempo é necessário separar por virgula.
+ </param>
+ <param name="BCC">Endereço de email para cópia oculta.
+ No caso de envio para várias pessoas ao mesmo tempo é necessário separar por virgula.
+ </param>
+ <param name="CC">Endereço de email para cópia.
+ No caso de envio para várias pessoas ao mesmo tempo é necessário separar por virgula.
+ </param>
+ <param name="Assunto">Assunto do email</param>
+ <param name="CorpoDoEmail">Conteúdo do email.
+ Permite texto.
+ Permite tag html.
+ </param>
+ <param name="IsHtml">Parametro opcional, de padrão sempre falso, para envio de mensagem em html.</param>
+ <param name="arrAnexo">Parametro opcional. Vetor de string com os endereços dos arquivos a ser anexados.</param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaTelefoneNextel(System.String)">
+ <summary>
+ Valida Operadora.
+ Valida se a operadora é nextel.
+ </summary>
+ <param name="strNumero"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.VerificaArquivoAtualizacao(System.String,System.String)">
+ <summary>
+ Verifica arquivo de atualizacao.
+ </summary>
+ <param name="strServer"></param>
+ <param name="strLocal"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.LeArquivoTXT(System.String)">
+ <summary>
+ Lê um arquivo texto.
+ </summary>
+ <param name="StartupPath">Informar o endereço do arquivo.</param>
+ <returns>Uma string com os dados do arquivo.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriaLog(System.String,System.String)">
+ <summary>
+ Gera um log na maquina do remetente com os dados enviados por email
+ </summary>
+ <param name="StartupPath"></param>
+ <param name="strMensagem"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.AjustaCodClie(System.String,System.Int32)">
+ <summary>
+ Monta o codigo Clie com o numero de caracteres desejado para inserir.
+ </summary>
+ <param name="strCodClie">O codigo</param>
+ <param name="LengtnDesejado">O numero de caracter desejado</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.Decript(System.String)">
+ <summary>
+ Rotina de descriptografia.
+ </summary>
+ <param name="sStr">O valor que deseja descriptografar.</param>
+ <returns>Retorna um String com o valor criptografado.</returns>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ WAF - TL200001 - Rotina de descriptografia.
+ Autor da Modificação: Edson Ferreira  
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.StrZero(System.String,System.Int32)">
+ <summary>
+ Adiciona zero a direita do numero passado e a quantidade desejada
+ </summary>
+ <param name="sNumero">Informe o numero no formato string</param>
+ <param name="iRepeat">informe a quantidade de repetição no formato de inteiro - integer</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.Cripto(System.String)">
+ <summary>
+ Rotina de criptografia.
+ </summary>
+ <param name="sStr">O valor que deseja criptografar.</param>
+ <returns>Retorna um String com o valor criptografado.</returns>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ WAF - TL200001 - Rotina de criptografia.
+ Autor da Modificação: Edson Ferreira 
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriarEAlterarRegistroDoWindows(System.String,System.String,System.String)">
+ <summary>
+ Cria ou Altera o registro do windows
+ </summary>
+ <param name="Pasta">Nome da pasta que deseja ler o registro.</param>
+ <param name="Registro">Registro que deseja ler.</param>
+ <param name="valor">Valor padrão, caso o Registro não esteja criado.</param>
+ <returns>Boolean</returns>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ Modificações: 
+ 08/04/2011
+ WAF - TL200001 - Cria ou Altera o registro do windows 
+ Autor da Modificação: Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriaDiretorioRaz">
+ <summary>
+ Cria o Diretório Telesystem 2
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ Modificações: 
+ 08/04/2011
+ WAF - TL200001 - Cria o Diretório Telesystem 2
+ Autor da Modificação: Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.LerRegistroDoWindows(System.String,System.String,System.String)">
+ <summary>
+ Lê o registro do Windows
+ </summary>
+ <param name="Pasta">Nome da pasta que deseja ler o registro.</param>
+ <param name="Registro">Registro que deseja ler.</param>
+ <param name="valor">Valor padrão, caso o Registro não esteja criado.</param>
+ <returns>Retorna um String com o valor do Arquivo</returns>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ Modificações: 
+ 08/04/2011
+ WAF - TL200001 - Cria o Diretório Telesystem 2
+ Autor da Modificação: Wolney Alexandre Fernandes 
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaCampoUnidade(System.String)">
+ <summary>
+ Valida a digitatação de um campo  unidade
+ permitindo a digitação apenas de caracteres válidos 
+ </summary>
+ <remarks>
+ 
+ Data Criação:     27/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaCampoNumero(System.Char)">
+ <summary>
+ permitindo a digitação apenas de números
+ </summary>
+ <remarks>
+ 
+ Data Criação:     27/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.PegaData">
+ <summary>
+ Pega Data do Servidor
+ </summary>
+ <returns>tipo date</returns>
+ <remarks>
+ 
+ Data Criação:     04/05/2011
+ Auttor:           Edson Ferreira
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.PegaDataSemana">
+ <summary>Pega dia da semana</summary>
+ <returns>Dia da semana (Integer)</returns>
+ <remarks>
+ Data Criação:     24/06/2014
+ Autor:            Renato Eraclide
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.PegaDataSemana(System.DateTime)">
+ <summary>
+ Pega dia da semana (data específica)
+ </summary>
+ <returns>tipo date</returns>
+ <remarks>
+ 
+ Data Criação:     24/06/2014
+ Auttor:           Renato Eraclide
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaCCredito(System.String,System.String)">
+ <summary>
+ Valida o número do cartão de crédito
+ </summary>
+ <param name="bandeira">Passar um string com o nome da Bandeira</param>
+ <param name="Numero">Passar um string com o número do Cartão de Crédito</param>
+ <returns>Retorna uma Verdadeiro ou Falso</returns>
+ <remarks>
+ 
+ Data Criação:    04/05/2011
+ Auttor:           Wolney Alexandre Fernandes 
+ 
+ Modificações: 
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriaRetorno(System.Collections.Generic.List{IntegracaoNexxtera.Retorno}@,System.String,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ Monta uma lista contendo os erros enviado nos parametros.
+ </summary>
+ <param name="lstRetorno">Uma lista do tipo Retorno</param>
+ <param name="MsgErro">A mensagem do erro. (String) </param>
+ <param name="NumErro">O número do erro (String)</param>
+ <param name="Sucesso">O resulta se houve sucesso no procedimento (Boolean)</param>
+ <param name="TipoErro">O tipo de erro (String)</param>
+ <param name="Imagem">O nome da imagem (String)</param>
+ <returns>Uma lista de Retorno</returns>
+ <remarks>
+ 
+ Data Criação:    11/05/2011
+ Auttor:           Wolney Alexandre Fernandes  
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriaRetorno(System.Collections.Generic.List{IntegracaoNexxtera.Retorno}@,IntegracaoNexxtera.Retorno)">
+ <summary>
+ Monta uma lista contendo os erros do objeto Retorno
+ </summary>
+ <param name="lstRetorno">Uma lista do tipo Retorno</param>
+ <param name="_Retorno">Objeto Retorno</param>
+ <returns>uma lista incluindo o objeto do tipo retorno </returns>
+ <remarks>
+       Data criação: 20/03/2013
+       Autor: Wolney Alexandre Fernandes / Eduardo Lacerda
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriaRetorno(System.Collections.Generic.List{IntegracaoNexxtera.Retorno}@,IntegracaoNexxtera.ErrorConstants,IntegracaoNexxtera.DadosGenericos.TipoErro)">
+ <summary>
+ Monta uma lista contendo os erros do objeto Retorno
+ </summary>
+ <param name="lstRetorno">Uma lista do tipo Retorno</param>
+ <param name="lstretorno">Objeto Retorno</param>
+ <returns>uma lista incluindo o objeto do tipo retorno </returns>
+ <remarks>
+       Data criação: 23/04/2013
+       Autor: Wolney Alexandre Fernandes / Fernando
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.FValidaCgcCpf(System.String)">
+ <summary>
+ Rotina que valida CPF e CNPJ.
+ </summary>
+ <param name="Vl_CgcCpf">Recebe o CPF ou CNPJ. (String)</param>
+ <returns>Retorna um valor booliano.</returns>
+ <remarks>
+ 
+ Data Criação:    11/05/2011
+ Auttor:           Wolney Alexandre Fernandes   
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.FValidaInscEst(System.String,System.String)">
+ <summary>
+ Valida IE- Inscrição Stadual
+ </summary>
+ <param name="pInscr">Informa a IE</param>
+ <param name="pUF">Informa o UF - Estado</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.PrintaTela">
+ <summary>
+ FUNÇÃO QUE PRINTA A TELA
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ApagaImagemErro(System.String)">
+ <summary>
+ Função que apaga a imagem gerada pelo print de erro
+ </summary>
+ <param name="strCaminho"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.PesquisaParametros">
+ <summary>
+ Pesquisa os parametros
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CarregaRelatorio(System.Object@,System.Object[],System.String[],System.String,CrystalDecisions.CrystalReports.Engine.ReportDocument)">
+ <summary>
+ Carrega relatorio RPT.
+ </summary>
+ <param name="CrystalReportViewer">Passar o Objeto CrystalReportViewer</param>
+ <param name="lobjValorParametros">Um vetor contendo os valores dos parametros</param>
+ <param name="lstrNomeParametros">Um vetor contendo os parametros do RPT</param>
+ <param name="strRelatorio">Nome do relatorio com extensao para a abertura.</param>
+ <returns>
+ Entidade retorno contendo o erro ou a mensagem de sucesso na abertura
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.hextodec(System.String)">
+ <summary>
+ Converta de Hex. para dec.
+ </summary>
+ <param name="strValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.IncluiCaractere(System.String,System.String,System.Int32)">
+ <summary>
+ Incluir caracteres depois da palavra
+ </summary>
+ <param name="strPalavra"></param>
+ <param name="strCaracter"></param>
+ <param name="intTamanho"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.IncluiCaractereAntes(System.String,System.String,System.Int32)">
+ <summary>
+ Incluir caracteres antes da palavra
+ </summary>
+ <param name="strPalavra"></param>
+ <param name="strCaracter"></param>
+ <param name="intTamanho"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.FSepara(System.String)">
+ <summary>
+ Retira ponto, virgula, hífem, parentes, barra, contrabarra e Underline
+ </summary>
+ <param name="sString">O string</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.RemoveAcento(System.String)">
+ <summary>
+ Remove os acentos.
+ </summary>
+ <param name="sTexto"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.fExtenso(System.Double)">
+ <summary>
+ Função utilizada para converter um double em uma string com o número por extenso
+ </summary>
+ <param name="dblValor">Valor à ser convertido</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.FormatDate(System.DateTime,System.Int32)">
+ <summary>
+ Formata a data no formato selecionado, padrão yyyy-MM-dd
+ </summary>
+ <param name="data"></param>
+ <param name="formato">
+ 0 - yyyy-MM-dd
+ 1 - ddMMyyyy
+ 2- dd/MM/yyyy
+ 3 - DD/MM/YYYY HH:MM:SS
+ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.VerificaDbNull(System.Object,System.Int32)">
+ <summary>
+ Verifica se o dado passado é um DbNull e retorna o tipo especificado.
+ </summary>
+ <param name="value">Expressão que deseja comparar</param>
+ <param name="t">Tipo 0-Numérico, 1-Texto, 2-boolean, 3- DateTime, 4- Nothing </param>
+ <returns>Retorno o padrão (0, " ", false)
+ referente ao indice especificado,
+ em caso de índice inválido o retorno será 0.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.QuantDiasUteis(System.DateTime,System.DateTime)">
+ <summary>
+ Obtem a quantidade de dias uteis entre uma data e outra
+ </summary>
+ <param name="dtInicio"></param>
+ <param name="dtFim"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.VerificarTeclas(System.Int32[],System.String)">
+ <summary>
+ Verifica se a tecla digita corresponde a alguma das teclas passadas no array. Caso sim retorna true. 
+ </summary>
+ <param name="teclas">Lista de código ASCII das teclas que não podem ser digitadas</param>
+ <param name="tecla">Tecla digitada</param>
+ <returns>True se houver sucesso nas comparações, false caso não.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.EditaErrorConstant(IntegracaoNexxtera.ErrorConstants,System.String,System.String)">
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ <summary> Edita uma error constante para obter a descrição personalizada. </summary>
+
+ <remarks> Elacerda, 16/05/2013. </remarks>
+
+ <param name="ec"> ErrorConstant </param>
+ <param name="strTag"> Tag a ser retirada </param>
+ <param name="novoValor"> Valor a ser substituido </param>
+
+ <returns> . </returns>
+////////////////////////////////////////////////////////////////////////////////////////////////////
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CalculaDataUtil(System.DateTime,System.Int32)">
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ <summary> Retorno o próximo dia útil a partir do número de dias esperados. </summary>
+
+ <remarks> Elacerda, 27/05/2013. </remarks>
+
+ <param name="_DataInicio">      Data de início da contagem </param>
+ <param name="qtdeDiasCalcular"> Quantidade minima de dias para o próximo dia util </param>
+
+ <returns> . </returns>
+////////////////////////////////////////////////////////////////////////////////////////////////////
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.CriarFormatProvider">
+ <summary>
+ Cria um Format Provider de data, padrão pt-br.
+ *** Utilizar sempre ao converter uma data! ***
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.SetCultura">
+ <summary>
+ Seta a cultura da aplicação
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ApagaArquivo(System.String)">
+ <summary>
+ Verifica se arquivo existe, se não existe apaga
+ </summary>
+ <param name="strPath"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.TiraVlrTruncado(System.Double,System.Int32)">
+ <summary>
+ Retira valor truncado de um número com decimais (arredonda para baixo)
+ </summary>
+ <remarks> Renato - 21/05/2014 </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.RetornoFunc(System.String)">
+ <summary>
+ Cria retorno padrão erro funcional.
+ </summary>
+ <remarks> Renato - 30/06/2014 </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.RetornoArq(System.String,System.String)">
+ <summary>
+ Cria retorno padrão erro arquitetura.
+ </summary>
+ <remarks> Renato - 30/06/2014 </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ImportarExcel(System.String,System.String)">
+ <summary>
+ Importa um arquivo excel do computador e retorna um data table.
+ </summary>
+ <param name="strFilePath">Caminho do arquivo</param>
+ <param name="strIsHDR">Informação se contém header ou não na planilha. "true" ou "false"</param>
+ <returns>Um data table contendo os dados da planilha</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaHeaderDataTable(System.Data.DataTable,System.String)">
+ <summary>
+ Valida o header de um datatable baseado nas colunas informadas
+ </summary>
+ <param name="dtTable">Datatable</param>
+ <param name="strColunas">Nome das colunas separadas por ";"</param>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.ValidaLinhaDataTableEmBranco(System.Data.DataRow,System.String)">
+ <summary>
+ Valida se a linha passada está com todas as colunas em branco
+ </summary>
+ <param name="_Row">DataRow</param>
+ <param name="strColunas">Nome das colunas separadas por ";"</param>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Funcoes.EliminarLinhasVaziasDT(System.Data.DataTable)">
+ <summary>
+ Retorna um datatable, cujas linhas em branco foram eliminadas
+ </summary>
+ <param name="DTable">DataTable a ser manipulado</param>
+ <returns>Retorna um DataTable modificado</returns>
+</member>
+<member name="T:IntegracaoNexxtera.Retorno">
+ <summary>
+ Classe de tratamento de erros.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ EDF - TL200001 - Classe de tratamento de erros.
+ Autor da Modificação: Edson Ferreira  
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Conection">
+ <summary>
+ Classe responsável pela String de Conexão.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Auttor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ EDF - TL200001 - Classe responsável pela String de Conexão.
+ Autor da Modificação: Edson Ferreira
+ 
+ </remarks>
+</member>
+<member name="M:IntegracaoNexxtera.Conection.ParametroConexao(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="codID">
+ 0-Servidor
+ 1-Base de dados
+ 2-User
+ 3-Senha
+ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IntegracaoNexxtera.Conection.STRING_CONEXAO">
+ <summary>
+ String de conexao do Banco de Dados.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     08/04/2011
+ Autor:           Edson Ferreira
+ 
+ Modificações: 
+ 08/04/2011
+ EDF - TL200001 - String de conexao do Banco de Dados.
+ Autor da Modificação: Edson Ferreira
+ 
+ 
+  STRINGS UTILIZADAS
+  Public Shared STRING_CONEXAO As New Conection("Data Source=AQIJ8IFASEF; Initial Catalog=Telesystem; Integrated Security=SSPI;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=7D7FSV1; Initial Catalog=Telesystem; Integrated Security=SSPI;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=D82SX861; Initial Catalog=Telesystem; Integrated Security=SSPI;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=AQIJ8IFASEF;Initial Catalog=Telesystem;User Id=sa;Password=Ftadm_00;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=D82SX861\D82SX861;Initial Catalog=Telesystem;User Id=sa;Password=Ftadm_00;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=POG-D82;Initial Catalog=Telesystem;User Id=sa;Password=tele4tl4nt!c;")
+  Public Shared STRING_CONEXAO As New Conection("Data Source=POG-D82; Initial Catalog=Telesystem; Integrated Security=SSPI;")
+ </remarks>
+</member>
+<member name="P:IntegracaoNexxtera.AreaFilial.strPercRetISSManutencao">
+ <summary>
+ As propriedades iniciadas com str são utilizadas no Cadastro de Cidades para Filiais para corrigir o problema de conversão do tipo double para string
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IntegracaoNexxtera.BaixaContaReceber.Total">
+ <summary>
+ Utilizada na exclusão de lançamento de cta corrente
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.CategoriaPedido">
+ <summary>
+ 
+ </summary>
+ <remarks>
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Cliente">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IntegracaoNexxtera.Cliente.m_VlrSuperMotor">
+ <summary>
+ Descricao do STATUS do cliente ex: Ativo, Cancelado, Ativo - Bonificado, etc.
+ </summary>
+ <value>seta a descrição do tipo string</value>
+ <returns>Retorna a descrição do tipo string</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="T:IntegracaoNexxtera.ClienteBasico">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.ClienteGeral">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.ClienteMonitoria">
+ <summary>
+  Entidade de monitoriamento contendo as quantidades máxima de envio de Tele Online(ToQdeMax) e a quantidade enviadas mês(ToQdeEnv).
+ </summary>
+ <remarks>
+ 
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.DDD_DDI">
+ <summary>
+ Entidade de código do pais e código de área
+ </summary>
+ <remarks>
+ 
+ Data Criação:     12/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Email">
+ <summary>
+ Esta classe herda das classes DDD_DDI e Telefone
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Endereco">
+ <summary>
+ Endidade de Endereço.
+ </summary>
+ <remarks>
+ 
+ 
+ 
+ </remarks>
+</member>
+<member name="P:IntegracaoNexxtera.PedidoVenda.IdIndicacao">
+ <summary>
+ Variável utilizada na busca de pedido de venda por id de indicação, execução de indicação
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Representante">
+ <summary>
+ Entidade de numero de telefone ou fax.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     12/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.Telefone">
+ <summary>
+ Entidade de numero de telefone ou fax.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     12/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+<member name="T:IntegracaoNexxtera.TelefoneEmail">
+ <summary>
+ Entidade que carrega todas as propriedades de telefone e Email.
+ </summary>
+ <remarks>
+ 
+ Data Criação:     12/04/2011
+ Auttor:           Wolney Alexandre Fernandes
+ 
+ </remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D64B4DEC-0B7D-43AA-B50D-E54F5DB7E586}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>IntegracaoNexxtera.IntegracaoNexxtera</StartupObject>
+    <RootNamespace>IntegracaoNexxtera</RootNamespace>
+    <AssemblyName>IntegracaoNexxtera</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IntegracaoNexxtera.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IntegracaoNexxtera.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Boleto.Net">
+      <HintPath>packages\Boleto.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>..\packages\DllsCommon\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\DllsCommon\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.WinControls, Version=2011.1.11.315, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2011.1.11.315, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DllsCommon\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Web References.WSMobilePronto10072015.Reference.vb">
+      <HintPath>Common\Web References.WSMobilePronto10072015.Reference.vb.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoBC\AlterarBaixaContasReceber.vb" />
+    <Compile Include="BancoBC\ApagarTempCheckArqRetorno.vb" />
+    <Compile Include="BancoBC\BuscaBancoContaCorrente.vb" />
+    <Compile Include="BancoBC\BuscaBancoDebitoAutomatico.vb" />
+    <Compile Include="BancoBC\BuscaTempCheckArqRetorno.vb" />
+    <Compile Include="BancoBC\ConsultaBxAutosErros.vb" />
+    <Compile Include="BancoBC\ConsultaCodInconsistencias.vb" />
+    <Compile Include="BancoBC\ConsultaContasReceber.vb" />
+    <Compile Include="BancoBC\ConsultaControleRetBco.vb" />
+    <Compile Include="BancoBC\ConsultaRetornoBco.vb" />
+    <Compile Include="BancoBC\ContasAReceberAlterar.vb" />
+    <Compile Include="BancoBC\InsereCodInconsistencia.vb" />
+    <Compile Include="BancoBC\InserirControleRetBco.vb" />
+    <Compile Include="BancoBC\InserirHistoricoContato.vb" />
+    <Compile Include="BancoBC\InserirRetornoBco.vb" />
+    <Compile Include="BancoBC\InserirTempCheckArqRetorno.vb" />
+    <Compile Include="Common\CHelpDesk.vb" />
+    <Compile Include="Common\DadosGenericos.vb" />
+    <Compile Include="Common\ErrorConstants.vb" />
+    <Compile Include="Common\Funcoes.vb" />
+    <Compile Include="Common\Retorno.vb" />
+    <Compile Include="Conection.vb" />
+    <Compile Include="Entidades\Alianca.vb" />
+    <Compile Include="Entidades\AreaFilial.vb" />
+    <Compile Include="Entidades\BaixaContaReceber.vb" />
+    <Compile Include="Entidades\Banco.vb" />
+    <Compile Include="Entidades\Bancos.vb" />
+    <Compile Include="Entidades\Boleto.vb" />
+    <Compile Include="Entidades\BxAutosErros.vb" />
+    <Compile Include="Entidades\CategoriaPedido.vb" />
+    <Compile Include="Entidades\Cliente.vb" />
+    <Compile Include="Entidades\ClienteBasico.vb" />
+    <Compile Include="Entidades\ClienteContabilidade.vb" />
+    <Compile Include="Entidades\ClienteFinanceiro.vb" />
+    <Compile Include="Entidades\ClienteGeral.vb" />
+    <Compile Include="Entidades\ClienteManutencao.vb" />
+    <Compile Include="Entidades\ClienteMonitoria.vb" />
+    <Compile Include="Entidades\ClienteRonda.vb" />
+    <Compile Include="Entidades\ClienteVenda.vb" />
+    <Compile Include="Entidades\CodInconsistencias.vb" />
+    <Compile Include="Entidades\CondicaoPagamentoVenda.vb" />
+    <Compile Include="Entidades\ContaCorrente.vb" />
+    <Compile Include="Entidades\ContaReceber.vb" />
+    <Compile Include="Entidades\ControleRetBco.vb" />
+    <Compile Include="Entidades\DDD_DDI.vb" />
+    <Compile Include="Entidades\DetNotaFiscal.vb" />
+    <Compile Include="Entidades\Email.vb" />
+    <Compile Include="Entidades\Endereco.vb" />
+    <Compile Include="Entidades\EventoCtaReceber.vb" />
+    <Compile Include="Entidades\Exportacao.vb" />
+    <Compile Include="Entidades\FilaCobranca.vb" />
+    <Compile Include="Entidades\HistoricoContato.vb" />
+    <Compile Include="Entidades\LogEnvioArquivoRemessa.vb" />
+    <Compile Include="Entidades\NotaFiscal.vb" />
+    <Compile Include="Entidades\Optante.vb" />
+    <Compile Include="Entidades\Orcamento.vb" />
+    <Compile Include="Entidades\PagamentoAtivo.vb" />
+    <Compile Include="Entidades\Parametros.vb" />
+    <Compile Include="Entidades\PedidoVenda.vb" />
+    <Compile Include="Entidades\Regiao.vb" />
+    <Compile Include="Entidades\Representante.vb" />
+    <Compile Include="Entidades\RetornoBco.vb" />
+    <Compile Include="Entidades\Telefone.vb" />
+    <Compile Include="Entidades\TelefoneEmail.vb" />
+    <Compile Include="Entidades\TelefoneEmailComum.vb" />
+    <Compile Include="Entidades\TempCheckArqRetorno.vb" />
+    <Compile Include="Entidades\TipoClassificacao.vb" />
+    <Compile Include="Entidades\tNumeroGPRS.vb" />
+    <Compile Include="Entidades\ValidaDataGeracaoBUs.vb" />
+    <Compile Include="IntegracaoNexxtera.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

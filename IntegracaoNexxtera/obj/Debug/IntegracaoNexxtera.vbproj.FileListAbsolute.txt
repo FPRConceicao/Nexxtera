@@ -1,0 +1,98 @@
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe.config
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.pdb
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.xml
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.Resources.resources
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.GenerateResource.Cache
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.exe
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.xml
+c:\users\flavio.conceicao\documents\visual studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.pdb
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\ClosedXML.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Web References.WSMobilePronto10072015.Reference.vb.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\stdole.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbprojResolveAssemblyReference.cache
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe.config
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.pdb
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Boleto.Net.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\ClosedXML.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Web References.WSMobilePronto10072015.Reference.vb.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\stdole.dll
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.AssemblyReference.cache
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.Resources.resources
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.GenerateResource.cache
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.CoreCompileInputs.cache
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.CopyComplete
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.exe
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.xml
+C:\Users\joao.soaressantos\Downloads\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.pdb
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe.config
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.pdb
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Boleto.Net.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\ClosedXML.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Web References.WSMobilePronto10072015.Reference.vb.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\stdole.dll
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.AssemblyReference.cache
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.Resources.resources
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.GenerateResource.cache
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.CoreCompileInputs.cache
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.CopyComplete
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.exe
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.xml
+C:\Users\flavio.conceicao\Documents\Visual Studio 2015\Projects\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.pdb
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe.config
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.exe
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.pdb
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\IntegracaoNexxtera.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Boleto.Net.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\ClosedXML.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Web References.WSMobilePronto10072015.Reference.vb.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\stdole.dll
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\EPPlus.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\Telerik.WinControls.UI.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\bin\Debug\TelerikCommon.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.AssemblyReference.cache
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.Resources.resources
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.GenerateResource.cache
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.vbproj.CoreCompileInputs.cache
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\Integrac.26F89431.Up2Date
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.exe
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.xml
+C:\Documentos\IntegracaoNexxteraNovo\IntegracaoNexxtera 2\IntegracaoNexxtera\IntegracaoNexxtera\obj\Debug\IntegracaoNexxtera.pdb
