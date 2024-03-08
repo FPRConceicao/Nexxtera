@@ -5472,6 +5472,7 @@ ErrBaixa:
         Dim sAgencia As String, sCCorrente As String, sErros As String, sNumConta As String
         Dim sDataArq As String = ""
         Dim NumCCorrente As String
+        Dim tipoBoleto As Boolean = False
 
 
         Dim MultaM As Double = 0
@@ -5625,6 +5626,7 @@ ErrBaixa:
                     'CHECA SE EH LIQUIDACAO
                     If Mid(sBuffer, 109, 2) = "06" Or Mid(sBuffer, 109, 2) = "10" Then
                         Dim numeroCarteira = Mid(sBuffer, 83, 3)
+                        tipoBoleto = True
                         sNumtit = Trim(Mid(sBuffer, 38, 25))
                         sSeqTit = Strings.Right(sNumtit, 2)
                         sNumtit = Strings.Left(sNumtit, Len(sNumtit) - 2)
@@ -5979,6 +5981,10 @@ ErrBaixa:
         If CodigoAgenciaTele = "0196" Then
             sAgencia = "0196"
             NumCCorrente = "63932-2"
+        End If
+
+        If tipoBoleto = True Then
+            NumCCorrente = ""
         End If
 
 
