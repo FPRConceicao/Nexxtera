@@ -72,8 +72,6 @@ Module IntegracaoNexxtera
             Dim mArquivo As String
             Dim sBuffer As String
             Dim tamanhoArquivo As Int32
-            'Dim iCon As Integer
-            'Dim fsFile As IO.StreamReader
             'diretorio = "C:\Documentos\Documentos\Analises\Nexxtera\Bancos\Itau\boleto\20240229\" 'Teste local
             'diretorio = "X:\inbox" 'Teste
             diretorio = "C:\Skyline\inbox" 'Produção
