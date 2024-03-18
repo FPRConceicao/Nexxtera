@@ -54,8 +54,8 @@ Public Class BuscaTempCheckArqRetorno
         Dim _Retorno As New Retorno
         Dim rdr As SqlDataReader = Nothing
         Dim Connection As SqlConnection = New SqlConnection(Conection.STRING_CONEXAO.StringConexao)
-        Dim cmd As New SqlCommand("P_RelatChkRetornoExcelMultasJuros", Connection)
-
+        'Dim cmd As New SqlCommand("P_RelatChkRetornoExcelMultasJuros", Connection)
+        Dim cmd As New SqlCommand("P_RelatChkRetornoExcelMultasJurosNexxtera", Connection)
         Try
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandTimeout = DadosGenericos.Timeout.Query
