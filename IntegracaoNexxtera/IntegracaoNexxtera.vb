@@ -73,8 +73,8 @@ Module IntegracaoNexxtera
             Dim sBuffer As String
             Dim tamanhoArquivo As Int32
             'diretorio = "C:\Documentos\Documentos\Analises\Nexxtera\Bancos\Itau\boleto\20240229\" 'Teste local
-            'diretorio = "X:\inbox" 'Teste
-            diretorio = "C:\Skyline\inbox" 'Produção
+            diretorio = "X:\inbox" 'Teste
+            'diretorio = "C:\Skyline\inbox" 'Produção
 
             For Each foundFile As String In My.Computer.FileSystem.GetFiles(diretorio)
 
@@ -5982,7 +5982,7 @@ ErrBaixa:
         End If
 
         If tipoBoleto = True Then
-            NumCCorrente = ""
+            sAgencia = ""
         End If
 
 
