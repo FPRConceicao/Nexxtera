@@ -73,8 +73,8 @@ Module IntegracaoNexxtera
             Dim sBuffer As String
             Dim tamanhoArquivo As Int32
             'diretorio = "C:\Documentos\Documentos\Analises\Nexxtera\Bancos\Itau\boleto\20240229\" 'Teste local
-            diretorio = "X:\inbox" 'Teste
-            'diretorio = "C:\Skyline\inbox" 'Produção
+            'diretorio = "X:\inbox" 'Teste
+            diretorio = "C:\Skyline\inbox" 'Produção
 
             For Each foundFile As String In My.Computer.FileSystem.GetFiles(diretorio)
 
@@ -1336,13 +1336,13 @@ Module IntegracaoNexxtera
                         sAgencia = Mid(sBuffer, 54, 4)
 
                         If (sAgencia) = "    " Then
-                            sAgencia = strAgenItau 'lstBanco(0).CodAgen
+                            sAgencia = "1608" 'lstBanco(0).CodAgen
                         End If
 
                         sConta = Mid(sBuffer, 66, 5)
 
                         If (sConta) = "     " Then
-                            sConta = strContaCorrenteItau 'lstBanco(0).Numcta
+                            sConta = "40310-9" 'lstBanco(0).Numcta
                         End If
 
                         sDataArq = CDate(Mid(sBuffer, 148, 4) & "-" & Mid(sBuffer, 146, 2) & "-" & Mid(sBuffer, 144, 2))
